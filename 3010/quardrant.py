@@ -3,32 +3,28 @@
 x = int(input())
 y = int(input())
 
+#x == 0 and y == 0
+if not x and not y:
+    print("O")
+else:
+    pass
 
-def quardrant(x: int, y: int):
+#x != 0 and y == 0
+if not x and y:
+    print("Y")
+#x == 0 and y != 0
+elif x and not y:
+    print("X")
+else:
+    pass
 
-    if x == 0 and y == 0:
-        print("O")
-        return
-
-    if x == 0 and y != 0:
-        print("Y")
-        return
-    elif x != 0 and y == 0:
-        print("X")
-        return
-
-    if x > 1 and y > 1:
-        print("Q1")
-        return
-    elif x < 1 and y > 1:
-        print("Q2")
-        return
-    elif x < 1 and y < 1:
-        print("Q3")
-        return
-    elif x > 1 and y < 1:
-        print("Q4")
-        return
-
-quardrant(x, y)
- 
+if x > 0 and y > 0:
+    print("Q1")
+#x < 0 and y > 0
+elif y > 0 > x:
+    print("Q2")
+elif x < 0 and y < 0:
+    print("Q3")
+#x > 0 and y < 0
+elif x > 0 > y:
+    print("Q4")

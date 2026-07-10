@@ -1,12 +1,8 @@
 """power"""
 
-
-from decimal import Decimal, getcontext
-
 expo = int(input())
+pattern = [7, 9, 3, 1]
 
-getcontext().Emax = 200000000000000000
-result = Decimal("7") ** Decimal(f"{expo}")
+mod = expo % 4
 
-print(str(result))
-print(str(result).split('E', maxsplit=1)[0][-1])
+print(pattern[mod - 1])
