@@ -1,0 +1,4 @@
+"""calc"""
+
+num = int(input())
+
