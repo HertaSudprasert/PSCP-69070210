@@ -5,10 +5,9 @@ num = int(input())
 if num == 1:
     print(1)
 else:
-    calc = ""
+    calc = 0
 
     for i in range(1, num + 1):
-        calc += str(i)
-        calc += "+"
-    print(len(calc))
-    
+        calc += len(str(i))
+        calc += 1
+    print(calc)
