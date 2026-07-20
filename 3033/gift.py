@@ -3,9 +3,12 @@
 
 nums = input()
 
-radius = nums.split()[0]
-height = nums.split()[1]
-width = nums.split()[2]
+radius = float(nums.split()[0])
+height = float(nums.split()[1])
+glue = float(nums.split()[2])
 
-pi = 3.14
+PI = 3.14
 
+circle_circum = 2 * PI * radius
+
+print(f"{(height + 2 * radius):.2f}" ,f"{(circle_circum + glue):.2f}")
