@@ -9,8 +9,8 @@ wing = int(input())
 
 can_widpeun = int(input())
 can_situp = int(input())
-can_looknung = int(input())
 can_wing = int(input())
+can_looknung = int(input())
 
 wid_peun_time = widpeun / can_widpeun
 situp_time = situp / can_situp
