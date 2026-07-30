@@ -29,17 +29,37 @@ elif month == 5:
     else:
         print("gemini")
 elif month == 6:
-    pass
+    if day <= 21:
+        print("gemini")
+    else:
+        print("cancer")
 elif month == 7:
-    pass
+    if day <= 22:
+        print("cancer")
+    else:
+        print("leo")
 elif month == 8:
-    pass
+    if day <= 22:
+        print("leo")
+    else:
+        print("virgo")
 elif month == 9:
-    pass
+    if day <= 22:
+        print("virgo")
+    else:
+        print("libra")
 elif month == 10:
-    pass
+    if day <= 23:
+        print("libra")
+    else:
+        print("scorpio")
 elif month == 11:
-    pass
+    if day <= 21:
+        print("scorpio")
+    else:
+        print("sagittarius")
 elif month == 12:
-    pass
-
+    if day <= 21:
+        print("sagittarius")
+    else:
+        print("capricorn")
