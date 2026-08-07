@@ -1,5 +1,7 @@
 """charnom"""
 
+import math
+
 kaimook_data = input()
 charnom_data = input()
 
@@ -40,6 +42,9 @@ def char_analyzer():
     char = char_dict[char_type][char_sweet] * char_amount
     palang_ngan_char =  kaimook + char
 
-    print(f"{palang_ngan_char:.0f}")
-
+    if palang_ngan_char.is_integer():
+        print(math.floor(palang_ngan_char))
+    else:
+        print(palang_ngan_char)
+        
 char_analyzer()
