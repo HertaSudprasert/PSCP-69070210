@@ -1,14 +1,26 @@
 """afagoighrieogjiaerogi"""
 
-anutin = int(input())
+num = int(input())
 
-nayok = []
+pairs = []
 
-while anutin > 0:
-    prayut = int(input())
-    nayok.append(prayut)
-    anutin -= 1
+for _ in range(0, num):
+    first = int(input())
+    second = int(input())
+    pairs.append((first, second))
 
-big_list = []
+greater = []
+for i in pairs:
+    if i[0] > i[1]:
+        greater.append(i[0])
+    else:
+        greater.append(i[1])
 
-store = 0
+thing = []
+for j in greater:
+    thing.append(str(j))
+    thing.append(" + ")
+
+thing.pop()
+
+print(f'{"".join(thing)} = {sum(greater)}')
