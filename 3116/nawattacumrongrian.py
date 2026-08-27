@@ -1,23 +1,25 @@
-"""skul"""
+"""nigga wtf is this incomprehensible problem"""
 
 school = input()
 
-school_list = school.split()
+thing = []
+first = ord(school[0].upper())
+last = ord(school[-1].upper())
 
-first = school[0]
-last = school[-1]
+for i in range(1, 11):
+    val = i - 1
 
-asc_first = ord(first)
-asc_last = ord(first)
-
-for i in school:
     if i % 2:
-        school_list[i] = i + asc_first
+        rahas1 = first + val
     else:
-        school_list[i] = asc_last - i
+        rahas1 = last - val
+    rahas2 = rahas1 % len(school)
 
-for j in school_list:
-    if j % 10 > 9:
-        j = j % 10
-    school_list = j % len(school)
+    if rahas2 > 9:
+        rahas2 %= 10
 
+    thing.append(rahas2)
+
+mid = thing[2:8]
+
+print(" ".join(map(str, mid)))
