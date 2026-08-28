@@ -7,8 +7,6 @@ pairs = []
 for _ in range(0, num):
     first = int(input())
     second = int(input())
-    if not second:
-        second = -999999999
     pairs.append((first, second))
 
 greater = []
@@ -25,4 +23,7 @@ for j in greater:
 
 thing.pop()
 
-print(f'{"".join(thing)} = {sum(greater)}')
+if len(greater) == 1:
+    print(greater[0])
+else:
+    print(f'{"".join(thing)} = {sum(greater)}')
