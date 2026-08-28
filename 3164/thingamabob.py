@@ -7,6 +7,8 @@ pairs = []
 for _ in range(0, num):
     first = int(input())
     second = int(input())
+    if not second:
+        second = -999999999
     pairs.append((first, second))
 
 greater = []
