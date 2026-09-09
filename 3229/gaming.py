@@ -32,14 +32,11 @@ base = int(input())
 bonus = int(input())
 consec = int(input())
 
-all_score = base + bonus
+total_score = base + bonus
 
-if consec >= 3:
-    MULTI = all_score * 1.5
-else:
-    MULTI = 0
+if consec > 3:
+    total_score = total_score * 1.5
 
-total_score = all_score + MULTI
 
 rank = 5
 if total_score >= 1500:
@@ -59,6 +56,6 @@ if rank == 5 and consec >= 7:
 elif rank == 4 and bonus > 300:
     special = 88
 
-print(total_score)
+print(int(total_score))
 print(rank)
 print(special)
