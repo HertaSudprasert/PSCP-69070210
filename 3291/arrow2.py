@@ -7,5 +7,6 @@ center = n // 2
 
 for i in range(n):
     thing = "*" * k
-    far_from_center = abs(i - center)
-    print(far_from_center)
+    far_from_center = abs(center - i)
+    spaces = center - far_from_center
+    print(" " * spaces, thing, sep="")
