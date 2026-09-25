@@ -1,6 +1,13 @@
 """faifa"""
 
+import math
+
 nuai = int(input())
+
+
+def round_half_up(num, dec=0):
+    mult = 10 ** dec
+    return math.floor(num * mult + 0.5) / mult
 
 kar_fai_base = 0
 
